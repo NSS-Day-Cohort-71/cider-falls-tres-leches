@@ -1,5 +1,5 @@
-
-import { parkAreaList } from './parkAreas.js';
+import { getParkAreaServices } from './services.js';
+// import { parkAreaList } from './parkAreas.js';
 import { Guests } from './guestList.js';
 
 const container = document.querySelector('#container');
@@ -11,7 +11,7 @@ const applicationHTML = `
     <article class="main-content">
         <section class="park_details_content">
             <h2>Park Destinations</h2>
-            ${parkAreaList()}
+            ${getParkAreaServices()}
         </section>
         <section class="guest_list_content">
             <h2>Park Guests</h2>
@@ -24,8 +24,6 @@ const applicationHTML = `
             <p>Email: <a href="mailto:info@ciderfallspark.com">info@ciderfallspark.com</a></p>
             <p>Address: 123 Park Lane, City, ST</p>
         </article>
-    </footer>`
-        
+    </footer>`;
 
-container.innerHTML = applicationHTML
-
+container.innerHTML = applicationHTML;
