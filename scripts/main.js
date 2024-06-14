@@ -9,17 +9,20 @@ const applicationHTML = `
     <header>
         <h1>Cider Falls Park</h1>
     </header>
-    <article class="main-content">
-        <section class="park_details_content">
-            ${serviceList()}
+    <div class ="main-container">
+        <section class="park-details-content">
             <h2>Park Destinations</h2>
-            ${getParkAreaServices()}
+            <div id="park-details-section">
+                ${getParkAreaServices()}
+            </div>
         </section>
-        <section class="guest_list_content">
+        <aside class="guest-list-content">
             <h2>Park Guests</h2>
-            ${Guests()}
-        </section>
-    <article>
+            <div id="guest-list-section">
+                ${Guests()}
+            </div>
+        </aside>
+    </div>
     <footer>
         <article class="contact-info">
             <p>Phone: (123) 456-7890</p>
