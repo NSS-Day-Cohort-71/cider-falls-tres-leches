@@ -1,6 +1,7 @@
-import { getParkAreaServices } from './services.js';
+import { getParkAreaServices } from './parkAreaServices.js';
 // import { parkAreaList } from './parkAreas.js';
 import { Guests } from './guestList.js';
+import { serviceList } from './serviceList.js';
 
 const container = document.querySelector('#container');
 
@@ -10,6 +11,7 @@ const applicationHTML = `
     </header>
     <article class="main-content">
         <section class="park_details_content">
+            ${serviceList()}
             <h2>Park Destinations</h2>
             ${getParkAreaServices()}
         </section>
