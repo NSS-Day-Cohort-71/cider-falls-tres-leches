@@ -107,31 +107,37 @@ const database = {
       id: 1,
       name: 'Chamfort River',
       location: 'Northeast',
+      serviceIds: [1, 2, 3]
     },
     {
       id: 2,
       name: 'Lost Wolf Hiking Trail',
       location: 'North',
+      serviceIds: [4, 5, 6]
     },
     {
       id: 3,
       name: 'Lodge',
       location: 'Northwest',
+      serviceIds: [7, 8, 5, 9]
     },
     {
       id: 4,
       name: 'Gander River',
       location: 'Southwest',
+      serviceIds: [3, 4]
     },
     {
       id: 5,
       name: 'Campgrounds',
       location: 'South',
+      serviceIds: [7, 8, 9]
     },
     {
       id: 6,
       name: 'Pine Bluffs Trails',
       location: 'Southeast',
+      serviceIds: [4, 5, 10]
     },
   ],
 

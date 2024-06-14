@@ -1,3 +1,4 @@
+
 import { parkAreaList } from './parkAreas.js';
 import { Guests } from './guestList.js';
 
@@ -27,3 +28,4 @@ const applicationHTML = `
         
 
 container.innerHTML = applicationHTML
+
