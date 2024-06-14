@@ -1,7 +1,8 @@
-// Import guestList function from database.js
+// Import guest list function from database.js
+import { getGuests } from "./database.js"
 
 // Function that generates the list of guests in the park
-const guests = // guestList function from database.js
+const guests = getGuests()
 
 export const Guests = () => {
     let html = "<ul>"
