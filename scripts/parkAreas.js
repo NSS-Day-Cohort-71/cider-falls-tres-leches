@@ -12,8 +12,8 @@ document.addEventListener('click', (event) => {
         counter++;
       }
     }
+    window.alert(`There are ${counter} guests in this area`);
   }
-  window.alert(`There are ${counter} guests in this area`);
 });
 
 export const parkAreaList = () => {
