@@ -1,34 +1,49 @@
-import { getServices } from "./database.js"
-import { getParkAreas } from "./database.js";
+import { getServices } from './database.js';
+import { getParkAreas } from './database.js';
+import { getGuests } from './database.js';
 
 const services = getServices();
 const parkAreas = getParkAreas();
 
 const findServicesMatch = (parkObject, servicesArray) => {
+  const listOfServices = [];
 
-    const listOfServices = []
+  for (const service of servicesArray) {
+    if (parkObject.serviceIds.includes(service.id))
+      listOfServices.push(service.name);
+  }
 
-    for (const service of servicesArray) {
-        if (parkObject.serviceIds.includes(service.id))
-            listOfServices.push(service.name)
-    }
-
-    return listOfServices;
-}
+  return listOfServices;
+};
 
 export const getParkAreaServices = () => {
-    let html = "<ul>"
+  let html = '';
 
-    for (const park of parkAreas) {
-        const parkService = findServicesMatch(park, services)
+  for (const park of parkAreas) {
+    const parkService = findServicesMatch(park, services);
 
-        html+= `<ul>`
-        for (const serviceName of parkService) {
-            html+= `<li>${serviceName}</li>`
-        }
+    html += `<h2 data-id="${park.id}" data-type="park">${park.name}</h2>`;
+    html += `<ul>`;
+    for (const serviceName of parkService) {
+      html += `<li>${serviceName}</li>`;
     }
+    html += '</ul>';
+  }
 
-    html += "</ul>"
+  return html;
+};
+document.addEventListener('click', (event) => {
+  const clicked = event.target;
+  const clickedId = clicked.dataset.id;
+  const guests = getGuests();
+  let counter = 0;
 
-    return html
-}
+  if (clicked.dataset.type === 'park') {
+    for (const guest of guests) {
+      if (parseInt(clickedId) === guest.parkId) {
+        counter++;
+      }
+    }
+    window.alert(`There are ${counter} guests in this area`);
+  }
+});
