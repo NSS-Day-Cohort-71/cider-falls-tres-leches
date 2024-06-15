@@ -9,7 +9,7 @@ const applicationHTML = `
     <header>
         <h1>Cider Falls Park</h1>
     </header>
-    <div class ="main-container">
+    <article class="main-content">
         <section class="park-details-content">
             <h2>Park Destinations</h2>
             <div id="park-details-section">
@@ -22,7 +22,7 @@ const applicationHTML = `
                 ${Guests()}
             </div>
         </aside>
-    </div>
+    </article>
     <footer>
         <article class="contact-info">
             <p>Phone: (123) 456-7890</p>
