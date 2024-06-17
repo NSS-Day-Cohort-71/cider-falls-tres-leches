@@ -22,19 +22,16 @@ export const getParkAreaServices = () => {
   for (const park of parkAreas) {
     const parkService = findServicesMatch(park, services);
 
-    html += `<h2 
-              data-id="${park.id}" 
-              data-type="park"
-              >${park.name}
-                <ul class="service-list">`;
-                      for (const serviceName of parkService) {
-                        html += `<li class="service-item">${serviceName}</li>`;
-                      }
-    html += '</ul></h2>';
+    html += `<h2 data-id="${park.id}" data-type="park">${park.name}</h2>`;
+    html += `<ul>`;
+    for (const serviceName of parkService) {
+      html += `<li>${serviceName}</li>`;
+    }
+    html += '</ul>';
   }
+
   return html;
 };
-
 document.addEventListener('click', (event) => {
   const clicked = event.target;
   const clickedId = clicked.dataset.id;
