@@ -32,7 +32,7 @@ document.addEventListener('click', (theClickEvent) => {
 
 export const serviceList = () => {
   const services = getServices();
-  let html = '<p>Park Services: ';
+  let html = '<p><b>Park Services:</b> ';
 
   for (const service of services) {
     if (service.id === services.length) {
