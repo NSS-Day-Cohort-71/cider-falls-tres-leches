@@ -11,10 +11,11 @@ const applicationHTML = `
     </header>
     <article class="main-content">
         <section class="park-details-content">
-        ${serviceList()}
+            <div id="service-list"
+                ${serviceList()}
+            </div>
             <h2>Park Destinations</h2>
             <div id="park-details-section">
-           
                 ${getParkAreaServices()}
             </div>
         </section>
