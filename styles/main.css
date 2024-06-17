@@ -91,6 +91,7 @@ header h1 {
 .guest-list-content {
     flex: 1;
     padding-left: 20px;
+    text-align: center;
 }
 
 .guest-list-content h2 {
