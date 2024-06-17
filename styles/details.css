@@ -47,12 +47,20 @@ footer {
 }
 
 #service-list {
-  border: 2px solid #333;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+#service-list span {
+    cursor: pointer;
+}
+
+#service-list span:hover {
+    text-decoration: underline;
 }
 
 #park-details-section {
@@ -72,11 +80,10 @@ footer {
   color: #333;
 }
 
-header,
-footer {
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #333;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+header, footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
