@@ -104,10 +104,10 @@ const database = {
 
   parkAreas: [
     {
-      id: 1,
-      name: 'Lodge',
-      location: 'Northwest',
-      serviceIds: [7, 8, 5, 9]
+      id: 3,
+      name: 'Chamfort River',
+      location: 'Northeast',
+      serviceIds: [1, 2, 3],
     },
     {
       id: 2,
@@ -116,10 +116,10 @@ const database = {
       serviceIds: [4, 5, 6],
     },
     {
-      id: 3,
-      name: 'Chamfort River',
-      location: 'Northeast',
-      serviceIds: [1, 2, 3],
+      id: 1,
+      name: 'Lodge',
+      location: 'Northwest',
+      serviceIds: [7, 8, 5, 9]
     },
     {
       id: 4,
