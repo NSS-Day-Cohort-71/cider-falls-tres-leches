@@ -105,7 +105,6 @@ header h1 {
 #guest-list-section li {
     margin-bottom: 5px;
     width: fit-content;
-    cursor: pointer;
 }
 
 /* Footer styles */
