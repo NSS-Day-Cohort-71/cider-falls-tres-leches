@@ -47,7 +47,15 @@ footer {
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    color: #333
+    color: #333;
+}
+
+#service-list span {
+    cursor: pointer;
+}
+
+#service-list span:hover {
+    text-decoration: underline;
 }
 
 #park-details-section {
@@ -73,3 +81,4 @@ header, footer {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+}
