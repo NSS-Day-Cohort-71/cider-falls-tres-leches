@@ -1,44 +1,49 @@
 body {
-    background-image: url(https://tnhomeandfarm.com/wp-content/uploads/2021/09/ROAN-4026.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: 'Arvo', serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background-image: url(https://tnhomeandfarm.com/wp-content/uploads/2021/09/ROAN-4026.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arvo', serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: #333;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #333;
 }
 
 p {
-    margin-bottom: 1em;
-    line-height: 1.5;
+  margin-bottom: 1em;
+  line-height: 1.5;
 }
 
 header {
-    padding: 20px 0;
-    text-align: center;
+  padding: 20px 0;
+  text-align: center;
 }
 
 footer {
-    padding: 10px 0;
-    text-align: center;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 20px;
-    overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  overflow: auto;
 }
 
 #service-list {
@@ -59,20 +64,20 @@ footer {
 }
 
 #park-details-section {
-    border: 2px solid #333;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
 }
 
 #guest-list-section {
-    border: 2px solid #333;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #333;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
 }
 
 header, footer {

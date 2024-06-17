@@ -6,8 +6,9 @@ const container = document.querySelector('#container');
 
 const applicationHTML = `
     <header>
-        <img src="styles/Logo.png" alt="logo" class="logo">
-        <h1>Cider Falls Park</h1>
+    <img id="logo" src="styles/Logo.png" alt="logo">
+    
+       <h1>Cider Falls Park</h1>
     </header>
     <article class="main-content">
         <section class="park-details-content">
