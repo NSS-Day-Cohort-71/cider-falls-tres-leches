@@ -1,0 +1,135 @@
+@import 'details.css';
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+  display: flex;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  display: inline;
+  padding-left: 5px;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+  display: inline;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Park Areas Styles */
+.park-details-content {
+  flex: 2;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.park-details-content h2 {
+  margin-bottom: 10px;
+}
+
+#park-details-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+#park-details-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(86, 86, 86, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.service-list {
+  list-style-type: none;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: auto;
+}
+
+.service-item {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Guest List */
+.guest-list-content {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.guest-list-content h2 {
+  margin-bottom: 10px;
+}
+
+#guest-list-section ol {
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+#guest-list-section li {
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Address styles */
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
